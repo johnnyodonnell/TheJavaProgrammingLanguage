@@ -17,6 +17,10 @@ import java.util.ArrayList;
  * see this discussion:
  * https://stackoverflow.com/questions/2745265/is-listdog-a-subclass-of-listanimal-why-are-java-generics-not-implicitly-po
  *
+ * See this type of behavior in...
+ * TypeScript: https://github.com/johnnyodonnell/TypeScriptHandbook/blob/master/genericsPolymorphic.ts
+ * C++: https://github.com/johnnyodonnell/TheCppProgrammingLanguage/blob/master/generics-not-polymorphic.cpp
+ *
  */
 
 class Main {
