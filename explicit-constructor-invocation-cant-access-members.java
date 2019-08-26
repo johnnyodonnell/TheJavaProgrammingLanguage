@@ -14,6 +14,8 @@
  * error: cannot reference number before supertype constructor has been called
  * """
  *
+ * This code compiles successfuly if `number` is changed to a static field.
+ *
  */
 
 class MyClass {
