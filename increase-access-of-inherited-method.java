@@ -26,7 +26,7 @@ class Derived extends Base {
 
 class Main {
     public static void main(String[] args) {
-        // new Base().print();
+        new Base().print();
         new Derived().print();
     }
 }
