@@ -13,8 +13,16 @@
  *
  */
 
-class HerClass {
+
+/*
+ * Cloneable is only needed when the `return (HerClass) super.clone()`
+ * statement is used
+ */
+class HerClass implements Cloneable {
     public HerClass clone() throws CloneNotSupportedException {
+        // This return statement results in no compile- or run-time errors
+        // return (HerClass) super.clone();
+
         return new HerClass();
     }
 }
