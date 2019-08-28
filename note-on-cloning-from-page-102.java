@@ -15,8 +15,11 @@
 
 
 /*
- * Cloneable is only needed when the `return (HerClass) super.clone()`
- * statement is used
+ * `implements Cloneable` is only needed when the
+ * `return (HerClass) super.clone()` statement is used
+ *
+ * `throws CloneNotSupportedException` is also only needed when
+ * that return statement is used.
  */
 class HerClass implements Cloneable {
     public HerClass clone() throws CloneNotSupportedException {
