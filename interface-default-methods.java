@@ -30,6 +30,9 @@
  *
  * Finally, default methods can't be modified to be `final`.
  *
+ * My SO answer to this debate:
+ * https://stackoverflow.com/a/57720913/5832619
+ *
  */
 
 interface First {
