@@ -28,6 +28,8 @@
  * implementation inheritance. Adding implemenation to interfaces
  * resurfaces the problem of multiple implementation inheritance.
  *
+ * Finally, default methods can't be modified to be `final`.
+ *
  */
 
 interface First {
