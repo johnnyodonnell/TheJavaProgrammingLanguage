@@ -11,11 +11,13 @@
  */
 
 class Enclosing {
-    private static String message = "Hello World!";
+    private static String staticMessage = "Hello from static field";
+    private String message = "Hello from non-static field";
 
     private static class Nested {
         private void print() {
-            System.out.println(message);
+            System.out.println(new Enclosing().message);
+            System.out.println(staticMessage);
         }
 
         public String toString() {
