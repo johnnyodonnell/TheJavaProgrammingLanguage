@@ -35,6 +35,8 @@
  * about the subclass, then only overriding can change the default
  * behavior.
  *
+ * Slightly more info on this on p. 223
+ *
  */
 
 class Base {
