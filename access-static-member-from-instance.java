@@ -13,26 +13,27 @@
  * `Body`
  * """
  *
+ * From p. 224
+ *
+ * Page 224 mentions that it's possible to access a static member
+ * from a null instance.
+ *
  */
 
 class Base {
-    public static
-        String field = "Hello from Base.";
+    public static String field = "Hello from Base.";
 
-    public static
-        String getField() {
-            return field;
-        }
+    public static String getField() {
+        return field;
+    }
 }
 
 class Derived extends Base {
-    public static
-        String field = "Hello from Derived.";
+    public static String field = "Hello from Derived.";
 
-    public static
-        String getField() {
-            return field;
-        }
+    public static String getField() {
+        return field;
+    }
 }
 
 class Main {
@@ -46,6 +47,12 @@ class Main {
 
             System.out.println(derived.field);
             System.out.println(derived.getField());
+
+            // Access static member from null instance
+            base = null;
+            derived = null;
+            System.out.println(base.field);
+            System.out.println(derived.field);
         }
 }
 
