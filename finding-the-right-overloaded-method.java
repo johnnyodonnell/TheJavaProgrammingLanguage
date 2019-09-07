@@ -20,6 +20,13 @@
  * The method `c` when used like `Main.<CA>c(null)` will result in
  * two methods with the same signature.
  *
+ * ^^^ This is actually not true. They have different signatures.
+ * See here:
+ * https://stackoverflow.com/questions/57836517/example-of-multiple-maximally-specific-methods-that-does-not-result-in-a-compile
+ *
+ * For methods with the same signature see the file:
+ * finding-the-correct-overloaded-method-same-signature.java
+ *
  * Java 12 Spec:
  * https://docs.oracle.com/javase/specs/jls/se12/html/jls-15.html#jls-15.12.2.5
  *
