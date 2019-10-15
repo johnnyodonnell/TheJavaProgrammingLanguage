@@ -9,6 +9,10 @@
  *
  * `main` results in an infinite loop
  *
+ * Somewhat surprising that the loop is even able to execute. Part of me
+ * would guess that the default field constructor would result in an
+ * infinite loop
+ *
  */
 
 class Main {
