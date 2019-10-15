@@ -7,21 +7,21 @@
  * class types.
  * """
  *
- * `main` results in an infinite loop
- *
- * Somewhat surprising that the loop is even able to execute. Part of me
- * would guess that the default field constructor would result in an
- * infinite loop
+ * The loop doesn't even have a chance to run
  *
  */
 
 class Main {
-    private static final Main field = new Main();
+    private final Main field = new Main();
 
     public static void main(String[] args) {
-        Main main = field;
-        while (main != null) {
-            System.out.println("Accessing main's field.");
+        Main main = new Main();
+
+        for (int i = 0; i < 25; ++i) {
+            System.out.println("Inspecting the previous object's field:");
+            System.out.println("id: " + main);
+            System.out.println();
+
             main = main.field;
         }
     }
