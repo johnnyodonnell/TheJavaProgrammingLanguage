@@ -1,0 +1,19 @@
+1.
+
+From p. 464
+
+"""
+A design that uses reference queues can be more reliable than direct use of
+finalization - particularly with phantom references - but remember that there
+are no guarantees as to exactly when or in what order a reference object will
+be enqueued.
+"""
+
+So then why is a design that uses reference queues more reliable than direct
+use of finalization?
+
+This book isn't very popular, so I doubt this type of question would get
+much attention on StackOverflow.
+
+-------------------------------------------------------------------------------
+
