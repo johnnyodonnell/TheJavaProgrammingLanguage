@@ -17,3 +17,21 @@ much attention on StackOverflow.
 
 -------------------------------------------------------------------------------
 
+2.
+
+From p. 606
+
+In regards to ConcurrentHashMap:
+"""
+Although all operations are thread-safe, they do not involve locking
+"""
+
+How is this possible?
+
+It's not possible as far as I'm aware and `ConcurrentHashMap` uses
+locks for it's implementation.
+
+See https://stackoverflow.com/q/11793067/5832619
+
+-------------------------------------------------------------------------------
+
